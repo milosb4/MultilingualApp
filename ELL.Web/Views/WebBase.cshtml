@@ -1,0 +1,41 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+}
+
+@* the fun starts here *@
+
+<!DOCTYPE HTML>
+<!--
+	Reflex by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Untitled</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+    <body class="is-preload">
+
+        @{Html.RenderPartial("SiteLayout/_MainNavigation");}
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+            @RenderBody();
+
+            @{Html.RenderPartial("SiteLayout/_Footer");}
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="/scripts/jquery.min.js"></script>
+        <script src="/scripts/browser.min.js"></script>
+        <script src="/scripts/breakpoints.min.js"></script>
+        <script src="/scripts/util.js"></script>
+        <script src="/scripts/main.js"></script>
+
+    </body>
+</html>

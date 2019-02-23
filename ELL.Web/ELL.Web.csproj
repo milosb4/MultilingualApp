@@ -274,11 +274,15 @@
     <Content Include="config\Lang\ru-RU.user.xml" />
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\main.css" />
     <Content Include="default.aspx" />
     <Content Include="elements.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="generic.html" />
     <Content Include="Global.asax" />
     <Content Include="images\pic01.jpg" />
@@ -289,10 +293,16 @@
     <Content Include="images\pic06.jpg" />
     <Content Include="images\pic07.jpg" />
     <Content Include="index.html" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\breakpoints.min.js" />
     <Content Include="scripts\browser.min.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\util.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -326,6 +336,9 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -366,6 +379,18 @@
     <Content Include="sass\libs\_vars.scss" />
     <Content Include="sass\libs\_vendor.scss" />
     <Content Include="sass\main.scss" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Partials\SiteLayout\_Footer.cshtml" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\WebBase.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Content.cshtml" />
+    <Content Include="Views\Partials\SiteLayout\_MainNavigation.cshtml" />
+    <Content Include="Views\Partials\Content\_Intro.cshtml" />
+    <Content Include="Views\Partials\Content\_Services.cshtml" />
+    <Content Include="Views\Partials\Content\_Spotlight.cshtml" />
+    <Content Include="Views\Partials\Content\_ImageBackgroundContent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -377,6 +402,7 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
