@@ -1,19 +1,29 @@
 ﻿@inherits UmbracoViewPage
 
+@using Umbraco.Web.Models
+
+@{ 
+    IEnumerable<RelatedLink> footerSocialLinks = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<RelatedLink>>("footerSocialLinks");
+}
+
 <!-- Footer -->
 <section id="footer" class="wrapper split style2">
     <div class="inner">
         <section>
             <header>
-                <h3>Magna lorem ipsum</h3>
+                @Umbraco.Field("footerTitle",insertBefore:"<h3>", insertAfter:"</h3>")
             </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos magna fames ac turpis egestas amet non lorem amet.</p>
+            @Umbraco.Field("footerContent")
+            @if(footerSocialLinks != null && footerSocialLinks.Count() > 0)
+            {
             <ul class="icons">
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                @foreach (RelatedLink link in footerSocialLinks)
+                {
+                    <li><a href="@link.Link" class="icon fa-@link.Caption" target="@(link.NewWindow ? "_blank" : null)"><span class="label">@link.Caption</span></a></li>
+                }
+
             </ul>
+            }
         </section>
         <section>
             <form method="post" action="#">
