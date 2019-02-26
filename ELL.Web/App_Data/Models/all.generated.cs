@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9daa3c7ba4c7101a")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b7b6021ebc6aeeec")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 
 // FILE: models.generated.cs
@@ -140,7 +140,7 @@ namespace Umbraco.Web.PublishedContentModels
 
 	/// <summary>Content</summary>
 	[PublishedContentModel("content")]
-	public partial class Content : PublishedContentModel, IBasicContentControls, IBasicTitleControls, IMainTitleImageControls, IUmbracoUrlAliasPropertiesControls
+	public partial class Content : PublishedContentModel, IBasicContentControls, IBasicTitleControls, IImageListControls, IMainTitleImageControls, IUmbracoUrlAliasPropertiesControls
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "content";
@@ -197,6 +197,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public Umbraco.Web.Models.RelatedLinks TitleLink
 		{
 			get { return Umbraco.Web.PublishedContentModels.BasicTitleControls.GetTitleLink(this); }
+		}
+
+		///<summary>
+		/// Image List: Choose the image to show in the list
+		///</summary>
+		[ImplementPropertyType("imageList")]
+		public IEnumerable<IPublishedContent> ImageList
+		{
+			get { return Umbraco.Web.PublishedContentModels.ImageListControls.GetImageList(this); }
 		}
 
 		///<summary>
@@ -506,6 +515,52 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Footer Title</summary>
 		public static string GetFooterTitle(IFooterContentControls that) { return that.GetPropertyValue<string>("footerTitle"); }
+	}
+
+	// Mixin content Type 1076 with alias "imageListControls"
+	/// <summary>Image List Controls</summary>
+	public partial interface IImageListControls : IPublishedContent
+	{
+		/// <summary>Image List</summary>
+		IEnumerable<IPublishedContent> ImageList { get; }
+	}
+
+	/// <summary>Image List Controls</summary>
+	[PublishedContentModel("imageListControls")]
+	public partial class ImageListControls : PublishedContentModel, IImageListControls
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "imageListControls";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ImageListControls(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ImageListControls, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Image List: Choose the image to show in the list
+		///</summary>
+		[ImplementPropertyType("imageList")]
+		public IEnumerable<IPublishedContent> ImageList
+		{
+			get { return GetImageList(this); }
+		}
+
+		/// <summary>Static getter for Image List</summary>
+		public static IEnumerable<IPublishedContent> GetImageList(IImageListControls that) { return that.GetPropertyValue<IEnumerable<IPublishedContent>>("imageList"); }
 	}
 
 	/// <summary>Folder</summary>

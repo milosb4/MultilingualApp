@@ -95,4 +95,35 @@
       <file name="/umbraco/lib/umbraco/compat.js" />
     </files>
   </item>
+  <item key="L3VtYnJhY29fY2xpZW50L3VpL2RlZmF1bHQuanM7" file="C:\Users\MILOS\Documents\websajt\multilinqualAppGit\MultilingualApp\ELL.Web\App_Data\TEMP\ClientDependency\1_ff634607b88d4355b8f176ffbb5c7863.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco_client/ui/default.js" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vbGliL0NvZGVNaXJyb3IvYWRkb24vZGlhbG9nL2RpYWxvZy5jc3M7L3VtYnJhY28vbGliL0NvZGVNaXJyb3IvbGliL2NvZGVtaXJyb3IuY3NzOy91bWJyYWNvX2NsaWVudC9Db2RlQXJlYS9zdHlsZXMuY3NzOy91bWJyYWNvL2Fzc2V0cy9jc3MvdW1icmFjby5jc3M7" file="C:\Users\MILOS\Documents\websajt\multilinqualAppGit\MultilingualApp\ELL.Web\App_Data\TEMP\ClientDependency\1_3e663e10c25c42c9b31363adc22b2044.cdC" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/lib/CodeMirror/addon/dialog/dialog.css" />
+      <file name="/umbraco/lib/CodeMirror/lib/codemirror.css" />
+      <file name="/umbraco_client/CodeArea/styles.css" />
+      <file name="/umbraco/assets/css/umbraco.css" />
+    </files>
+  </item>
+  <item key="L3VtYnJhY28vbGliL0NvZGVNaXJyb3IvbGliL2NvZGVtaXJyb3IuanM7L3VtYnJhY28vbGliL0NvZGVNaXJyb3IvYWRkb24vZWRpdC9tYXRjaGJyYWNrZXRzLmpzOy91bWJyYWNvL2xpYi9Db2RlTWlycm9yL21vZGUvY3NzL2Nzcy5qczsvdW1icmFjby9saWIvQ29kZU1pcnJvci9hZGRvbi9zZWFyY2gvc2VhcmNoLmpzOy91bWJyYWNvL2xpYi9Db2RlTWlycm9yL2FkZG9uL3NlYXJjaC9zZWFyY2hjdXJzb3IuanM7L3VtYnJhY28vbGliL0NvZGVNaXJyb3IvYWRkb24vZGlhbG9nL2RpYWxvZy5qczsvdW1icmFjb19jbGllbnQvbW9kYWwvbW9kYWwuanM7L3VtYnJhY29fY2xpZW50L3VpL2RlZmF1bHQuanM7L3VtYnJhY28vbGliL2Jvb3RzdHJhcC9qcy9ib290c3RyYXAuMi4zLjIubWluLmpzOy91bWJyYWNvL2xpYi91bWJyYWNvL2NvbXBhdC5qczsvdW1icmFjb19jbGllbnQvRWRpdG9ycy9FZGl0U3R5bGVTaGVldC5qczsvdW1icmFjb19jbGllbnQvQ29kZUFyZWEvamF2YXNjcmlwdC5qczsvdW1icmFjb19jbGllbnQvQXBwbGljYXRpb24valF1ZXJ5L2pxdWVyeS1maWVsZHNlbGVjdGlvbi5qczsvdW1icmFjb19jbGllbnQvQ29kZUFyZWEvVW1icmFjb0VkaXRvci5qczs" file="C:\Users\MILOS\Documents\websajt\multilinqualAppGit\MultilingualApp\ELL.Web\App_Data\TEMP\ClientDependency\1_d4a0052a95164cd98bee79f63eb8dabe.cdJ" compression="gzip" version="1">
+    <files>
+      <file name="/umbraco/lib/CodeMirror/lib/codemirror.js" />
+      <file name="/umbraco/lib/CodeMirror/addon/edit/matchbrackets.js" />
+      <file name="/umbraco/lib/CodeMirror/mode/css/css.js" />
+      <file name="/umbraco/lib/CodeMirror/addon/search/search.js" />
+      <file name="/umbraco/lib/CodeMirror/addon/search/searchcursor.js" />
+      <file name="/umbraco/lib/CodeMirror/addon/dialog/dialog.js" />
+      <file name="/umbraco_client/modal/modal.js" />
+      <file name="/umbraco_client/ui/default.js" />
+      <file name="/umbraco/lib/bootstrap/js/bootstrap.2.3.2.min.js" />
+      <file name="/umbraco/lib/umbraco/compat.js" />
+      <file name="/umbraco_client/Editors/EditStyleSheet.js" />
+      <file name="/umbraco_client/CodeArea/javascript.js" />
+      <file name="/umbraco_client/Application/jQuery/jquery-fieldselection.js" />
+      <file name="/umbraco_client/CodeArea/UmbracoEditor.js" />
+    </files>
+  </item>
 </map>
