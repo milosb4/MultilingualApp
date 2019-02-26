@@ -3,7 +3,7 @@
 @using Umbraco.Web.Models
 
 @{ 
-    IEnumerable<RelatedLink> footerSocialLinks = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<RelatedLink>>("footerSocialLinks");
+    IEnumerable<RelatedLink> footerSocialLinks = Umbraco.AssignedContentItem.GetPropertyValue<IEnumerable<RelatedLink>>("footerSocialLinks",true);
 }
 
 <!-- Footer -->
@@ -11,9 +11,9 @@
     <div class="inner">
         <section>
             <header>
-                @Umbraco.Field("footerTitle",insertBefore:"<h3>", insertAfter:"</h3>")
+                @Umbraco.Field("footerTitle",insertBefore:"<h3>", insertAfter:"</h3>", recursive: true)
             </header>
-            @Umbraco.Field("footerContent")
+            @Umbraco.Field("footerContent", recursive: true)
             @if(footerSocialLinks != null && footerSocialLinks.Count() > 0)
             {
             <ul class="icons">
@@ -26,16 +26,7 @@
             }
         </section>
         <section>
-            <form method="post" action="#">
-                <div class="fields">
-                    <div class="field half"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                    <div class="field half"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                    <div class="field"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Send Message" /></li>
-                </ul>
-            </form>
+               @{ Html.RenderAction("RenderForm","Contact");}
         </section>
     </div>
     <div class="copyright">
