@@ -1,0 +1,11 @@
+﻿ 2019-02-27 00:00:07,308 [P10760/D17/T93] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field multiPicker
+ 2019-02-27 00:00:07,308 [P10760/D17/T93] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
+ 2019-02-27 00:00:07,308 [P10760/D17/T93] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
+ 2019-02-27 00:00:07,309 [P10760/D17/T93] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
+ 2019-02-27 00:00:07,308 [P10760/D17/T154] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2019-02-27 00:00:07,314 [P10760/D17/T121] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field max
+ 2019-02-27 00:00:07,318 [P10760/D17/T8] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2019-02-27 00:00:07,320 [P10760/D17/T93] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2019-02-27 00:02:59,273 [P10760/D17/T130] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Generic' with Id '1057' has been published.
+ 2019-02-27 00:03:03,421 [P10760/D17/T93] INFO  umbraco.content - Save Xml to file...
+ 2019-02-27 00:03:03,433 [P10760/D17/T93] INFO  umbraco.content - Saved Xml to file.

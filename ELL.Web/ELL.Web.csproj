@@ -405,6 +405,7 @@
     <Content Include="Views\Partials\Contact\_Success.cshtml" />
     <Content Include="Views\Partials\Contact\_Error.cshtml" />
     <Content Include="Views\Partials\Content\_ImageList.cshtml" />
+    <Content Include="Views\PrettyLink.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
